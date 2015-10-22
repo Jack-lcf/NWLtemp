@@ -11,4 +11,6 @@ public class Messages {
     public static final String ADD_WORD_ERROR = "New word was not added";
     public static final String GET_DEL_ID_ERROR = "Error: the getting value of ID is null";
     public static final String DELETE_WORD_ERROR = "Delete word error";
+    public static final String ENG_TO_RUS_TEST = "English -> Russian";
+    public static final String RUS_TO_ENG_TEST = "Russian -> English";
 }
