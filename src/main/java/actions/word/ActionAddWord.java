@@ -25,7 +25,6 @@ public class ActionAddWord extends Action {
             WordService service = ServiceLocatorFactory.getServiceLocator().getService(WordService.class);
 
             if (service != null) {
-                System.out.println("rus - " + rus);
                 Word word = new Word(eng, rus);
                 Integer createdId = service.create(word);
 

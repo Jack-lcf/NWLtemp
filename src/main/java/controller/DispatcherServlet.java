@@ -55,7 +55,7 @@ public class DispatcherServlet extends HttpServlet {
         String uri = request.getRequestURI();
         String contextPath = request.getContextPath();
         String actionName = null;
-
+        
         String action = request.getParameter(Parameters.COMMAND_KEY);
 
         if (action == null) {
@@ -69,7 +69,7 @@ public class DispatcherServlet extends HttpServlet {
         } else {
             actionName = action;
         }
-
+        System.out.println(actionName);
         ActionManager actionManager = ActionManagerFactory.getActionManager();
         try {
             String path = actionManager.execute(actionName, request, response);

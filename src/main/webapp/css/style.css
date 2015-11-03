@@ -141,6 +141,20 @@ td {
     font-size: 18px;
 }
 
+#conclusion_wrong_text {
+	text-align: center;
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+}
+
+#conclusion_text {
+	text-align: center;
+    padding-top: 20px;
+    font-size: 16px;
+}
+
 #content_section {
     width: 400px;
     margin: auto;
@@ -168,6 +182,14 @@ td {
     width: 80px;
     height: 25px;
     margin-left: 70px;
+}
+
+#check {
+	
+}
+
+#check button {
+	margin-left: 160px;
 }
 
 #footer {

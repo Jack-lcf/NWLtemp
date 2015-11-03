@@ -13,4 +13,9 @@ public class Messages {
     public static final String DELETE_WORD_ERROR = "Delete word error";
     public static final String ENG_TO_RUS_TEST = "English -> Russian";
     public static final String RUS_TO_ENG_TEST = "Russian -> English";
+    public static final String TRANSLATE = "Translate";
+    public static final String RIGHT_REPLY_TEST = "Right :)";
+    public static final String WRONG_REPLY_TEST = "Wrong }:(";
+    public static final String BUTTON_CHECK = "Check";
+    public static final String BUTTON_NEXT = "Next";
 }

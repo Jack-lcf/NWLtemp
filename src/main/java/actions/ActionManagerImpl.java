@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import actions.word.ActionAddWord;
+import actions.word.ActionCheckWord;
 import actions.word.ActionDeleteWord;
 import actions.word.ActionLearning;
 import actions.word.ActionWords;
@@ -22,6 +23,7 @@ public class ActionManagerImpl implements ActionManager {
         actions.put(Commands.DEL_WORD_COM, ActionDeleteWord.class);
         actions.put(Commands.ENG_TO_RUS_COM, ActionLearning.class);
         actions.put(Commands.RUS_TO_ENG_COM, ActionLearning.class);
+        actions.put(Commands.CHECK_WORD_COM, ActionCheckWord.class);
     }
 
     public String execute(String actionName, HttpServletRequest request, HttpServletResponse response)

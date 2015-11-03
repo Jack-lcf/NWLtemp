@@ -6,8 +6,8 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "dictionary")
-public class Word extends AbstractEntity {
-    
+public class Word extends AbstractEntity implements Comparable<Word> {
+
     private static final long serialVersionUID = 1L;
     private String eng;
     private String rus;
@@ -100,6 +100,39 @@ public class Word extends AbstractEntity {
 
     public void totalUp() {
         total++;
+    }
+
+    public int compareTo(Word word) {
+        if (total == 0 || word.getTotal() == 0) {
+            return (total == 0) ? -1 : 1;
+        } else {
+            if(correct == 0 & word.getCorrect() == 0) {
+                if(total > word.getTotal()) {
+                    return -1;
+                } else {
+                    return (total < word.getTotal()) ? 1 : 0;
+                }
+            } else {
+                if (accuracy() > word.accuracy()) {
+                    return 1;
+                } else {
+                    return (accuracy() < word.accuracy()) ? -1 : 0;
+                }
+            }
+        }
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + getId() + 
+               ": " + eng + 
+               " - " + rus + 
+               " = " + correct + 
+               ":" + total;
+    }
+
+    private double accuracy() {
+        return Double.valueOf(correct) / Double.valueOf(total);
     }
 
 }

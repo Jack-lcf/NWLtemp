@@ -9,5 +9,6 @@ public class Uri {
     public static final String ALL_WORDS_URI = "/word/all_words";
     public static final String ADD_WORD_URI = "/word/add_word";
     public static final String LEARNING_WORD_URI = "/learning/test";
+    public static final String LEARNING2_WORD_URI = "/learning/test2";
     public static final String ERROR_URI = "/error";
 }

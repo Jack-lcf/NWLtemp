@@ -26,7 +26,7 @@
 				</p>
 				<p>
 					<label for="russian">Russian:</label>
-					<input type="text" name="russian" required="required" id="engEdit" value="" />
+					<input type="text" name="russian" required="required" id="rusEdit" value="" />
 				</p>
 				<p>
 					<button type="submit">Add</button>
